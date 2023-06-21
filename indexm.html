@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	</head>
 	<body class="whole">
 		<div class="block">
@@ -41,30 +42,46 @@
 				      <div>
 				      	 <span class="field_name">E-mail</span><span class="comment">*</span>
 				      </div>
-				      <input type="text"><input class="sign conf" value="✔" readonly>
+				      <div class="inp_cont">
+				      	<input class="icon-input" type="text">
+			      	</div>
 
 				      <div>			      	
 				      	 <span class="field_name">Номер телефона</span><span class="comment main_numb">*</span>
 				      	 <span class="field_name">Дополнительный номер</span><span class="comment">*</span>
 				      </div>
-		        	 <input id="numb" type="numb"><input class="sign notcong" value="✔" readonly>
-			         <input id="numb" type="numb"><input class="sign" readonly> 
-			
+
+				       
+				      <div class="inp_numb checked_numb">
+		        	 	<input class="numb" type="numb">
+		        	  </div>
+
+		        	 <div class="inp_numb">	
+			         	<input class="numb" type="numb">
+					 </div>
+					  	 
 
 				    <div>
 			      	 <span class="field_name">Фамилия</span><span class="comment">*</span>
 			      	</div>
-			      	<input type="text"><input class="sign conf" value="✔" readonly>
 
+			      	<div class="inp_cont">
+				      	<input class="icon-input" type="text">
+			      	</div>
+			      		
 			      	<div>
 			      	 <span class="field_name">Имя</span><span class="comment">*</span>
 			      	</div>
-			      	<input type="text"><input class="sign conf" value="✔" readonly>
+			      	<div class="inp_cont">
+				      	<input class="icon-input" type="text">
+			      	</div>
 
 			      	<div>
 			      	 <span class="field_name">Отчество</span><span class="comment">*</span>
 			      	</div>
-			      	<input type="text"><input class="sign conf" value="✔" readonly>
+			      	<div class="inp_cont">
+				      	<input class="icon-input" type="text">
+			      	</div>
 
 			      	<div>
 			      	 <span class="field_name">Дата рождения</span><span class="comment">*</span>
@@ -91,14 +108,21 @@
 					<div>
 			      	 <span class="field_name">Пол</span><span class="comment">*</span>
 			      	</div>
-			      	<button class="man">Мужской ✔</button>
-			      	<button class="woman">Женский</button>
+
+					<input type="radio" id="button1" name="choice" checked>
+					<label for="button1"> Мужской</label>
+
+					<input type="radio" id="button2" name="choice">
+					<label for="button2">Женский</label>
 
 			      	<div>
 			      		<button class="save_changes">Сохранить изменения</button>
 			      	</div>	
+
 			  </div>
 			</div>
+		</div>
+		<div class="icondiv">
 		</div>
 	</body>
 </html>
